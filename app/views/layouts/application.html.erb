@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+    <h1><%= link_to "Happy Birthday Ashlee!!!", pictures_path %><h1>
+    	<div class='pull-right'>
+				<p class="navbar-text navbar-right"><%= link_to "Add a Birthday Greeting!", new_picture_path, class: "navbar-link" %></p>
+				
+    	</div>
+    </div>
+  </nav>
+
+<div class="container topper">
+	<%= yield %>
+</div>
+</body>
+</html>
