@@ -1,0 +1,14 @@
+development: &development
+ bucket: andrewhouse
+ access_key_id: AKIAIDVXYLJ7VIUIN2BQ
+ secret_access_key: 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
+
+test: 
+ bucket: andrewhouse
+ access_key_id: AKIAIDVXYLJ7VIUIN2BQ
+ secret_access_key: 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
+
+production:
+ bucket: andrewhouse
+ access_key_id: AKIAIDVXYLJ7VIUIN2BQ
+ secret_access_key: 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
