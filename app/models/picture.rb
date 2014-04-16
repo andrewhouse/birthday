@@ -3,7 +3,6 @@ class Picture < ActiveRecord::Base
   									:styles => { :medium => "300x300>", :thumb => "100x100>", :large => "600>" }, 
   									:storage => :s3,
 									  :s3_credentials => "#{RAILS.root}/config/s3.yml",
-									  :s3_permissions => :public_read, :s3_protocol => "https",
 									  :path => ":attachment/:id/:style.:extension",
 									  :bucket => "andrewhouse"
 
