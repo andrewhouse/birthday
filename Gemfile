@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'paperclip'
 gem 'twitter-bootstrap-rails'
 gem 'aws-sdk'
+gem 'figaro'
 
 
 
