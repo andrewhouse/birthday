@@ -79,7 +79,6 @@ Birthday::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   #production.rb
-config.paperclip_defaults = {
  config.paperclip_defaults = {
   :storage => :s3,
   :bucket => ENV['AWS_BUCKET'],
