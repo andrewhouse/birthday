@@ -19,6 +19,7 @@
 $(document).ready(function(){
 	$('.containing-border').on('click','button', function(){
 		$(this).next('.description').fadeToggle('slow').toggleClass('hide');
+		$(this).toggleClass('btn-success')
 		if ($(this).next('.description').hasClass('hide')) {
 			$(this).html('Hide Message')
 		} else {
