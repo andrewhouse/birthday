@@ -1,23 +1,25 @@
   
 
-  <% @pictures.each do |picture| %>
-      <div>
-        <h3>From: <%= picture.username %></h3> 
-      </div>
-      <div class="containing-border">
-        <button>Show Message!</button>
-        <div class="description">
-          <h3><%= picture.description %></h3>
-          
-      <% if picture.image.blank? == false %>
-          <%= image_tag picture.image.url(:large) %>
-        </div>
-        <% end %>
-        <hr>
+<% @pictures.each do |picture| %>
+<div>
+  <h3>From: <%= picture.username %></h3> 
+</div>
+<div class="containing-border">
+  <button>Show Message!</button>
+  <div class="description">
+    <h3><%= picture.description %></h3>
+    
+    <% if picture.image.blank? == false %>
+    <%= image_tag picture.image.url(:large) %>
+    <% end %>
+  </div>
+  
+</div>
 
-        <% end %>
-      </div>
+<hr>
+
+<% end %>
 
 <%= link_to t('.new', :default => t("Upload Happy Birthday Picture")), 
-            new_picture_path,
-            :class => 'btn btn-primary' %>
+new_picture_path,
+:class => 'btn btn-primary' %>
