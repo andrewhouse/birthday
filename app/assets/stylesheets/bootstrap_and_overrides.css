@@ -36,6 +36,10 @@ body  {
 	font-family: modern;
 }
 
+.navbar a {
+	text-decoration: none;
+}
+
 .navbar .container .pull-right {
 	font-size: .6em;
 }
