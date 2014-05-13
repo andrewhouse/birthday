@@ -16,14 +16,26 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-	$('.containing-border').on('click','button', function(){
-		$(this).next('.description').fadeToggle('slow').toggleClass('hide');
+function showButton () {
+		var description = $(this).next('.description')
+		description.fadeToggle('slow').toggleClass('hide');
 		$(this).toggleClass('btn-success')
-		if ($(this).next('.description').hasClass('hide')) {
+		if (description.hasClass('hide')) {
 			$(this).html('Hide Message')
 		} else {
 			$(this).html('Show Message')
 		}
-	});
+	}
+
+function hoverTitle () {
+	$(this).css('color','lawngreen');
+}
+
+function hoverLeaveTitle () {
+	$(this).css('color', '#08c')
+}
+
+$(document).ready(function(){
+	$('.containing-border').on('click','button', showButton);
+	$('.container').on('mouseenter','a', hoverTitle).on('mouseleave','a', hoverLeaveTitle);
 });

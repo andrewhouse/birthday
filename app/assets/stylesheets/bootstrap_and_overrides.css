@@ -19,6 +19,11 @@ body  {
 	margin: 3%;
 	font-size: 1.5em;
 	display: none;
+	font-family: palatino;
+}
+
+#from {
+	font-family: calibri;
 }
 
 .topper {
@@ -26,8 +31,9 @@ body  {
 }
 
 .navbar .container{
-	background: #ddd;
+	background: #fff;
 	width: 83.5%;
+	font-family: modern;
 }
 
 .navbar .container .pull-right {
@@ -42,6 +48,7 @@ body  {
 	border: solid;
 	background: #FFF;
 }
+
 hr { width:100%; height:1px; background: #000 }
 
  .flash {
