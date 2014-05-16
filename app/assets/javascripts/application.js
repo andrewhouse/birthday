@@ -62,9 +62,18 @@ var items = $('#carousel-example-generic .item'), //grab all slides
 	}
 }
 
-$(document).ready(function(){
+function showCarousel(){
+	$('#carousel-example-generic').show();
+	carouselNormalization();
+}
+
+function documentLoad(){
 	$('.containing-border').on('click','button', showButton);
-	$('.container').on('mouseenter','a', hoverTitle).on('mouseleave','a', hoverLeaveTitle);
+	$('button').on('mouseenter','.container, a', hoverTitle).on('mouseleave','.container, a', hoverLeaveTitle);
 	$('.carousel').carousel({interval:4000, wrap: true, pause: ""});
 	carouselNormalization();
-});
+	$('.navbar').on('click', '.btn-success', showCarousel);	
+};
+
+$(document).ready(documentLoad);
+$(document).on('page:load',documentLoad); //loads JS on every page 

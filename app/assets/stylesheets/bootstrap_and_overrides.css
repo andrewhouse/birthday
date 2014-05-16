@@ -13,6 +13,7 @@ body  {
 	margin-left: auto;
   margin-right: auto;
 	text-align: center;
+	color: #08c;
 }
 
 .description {
@@ -30,6 +31,7 @@ body  {
 	background: #fff;
 	width: 83.5%;
 	font-family: modern;
+	color: #08c;
 }
 
 .navbar a {
@@ -83,12 +85,22 @@ div.flash.notice {
 	margin: 2% auto;
 }
 .carousel-indicators {
-position: absolute;
-left: 46%;
-z-index: 15;
-width: 60%;
-margin-left: 0%;
-padding-left: 0;
-list-style: none;
-text-align: center;
+	position: absolute;
+	left: 46%;
+	z-index: 15;
+	width: 60%;
+	margin-left: 0%;
+	padding-left: 0;
+	list-style: none;
+	text-align: center;
 }
+
+#carousel-example-generic{
+	display:none;
+}
+
+.topper {
+	margin: 5% auto;
+}
+
+
