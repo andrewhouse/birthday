@@ -63,15 +63,22 @@ var items = $('#carousel-example-generic .item'), //grab all slides
 }
 
 function showCarousel(){
-	$('#carousel-example-generic').show();
+
+	$('#carousel-example-generic').first('img').fadeToggle().toggleClass('display');
 	carouselNormalization();
+	$('.topper').fadeToggle();
+	if ($('#carousel-example-generic').hasClass('display')){
+		$(this).html('Display List of Greetings');
+	} else {
+		$(this).html('Display Greetings as Slideshow');
+	}
+	$('.carousel').carousel({interval:4000, wrap: true, pause: ""}, 'cycle');
 }
+
 
 function documentLoad(){
 	$('.containing-border').on('click','button', showButton);
-	$('button').on('mouseenter','.container, a', hoverTitle).on('mouseleave','.container, a', hoverLeaveTitle);
-	$('.carousel').carousel({interval:4000, wrap: true, pause: ""});
-	carouselNormalization();
+	$('.navbar').on('mouseenter','.container, button, a', hoverTitle).on('mouseleave','.container, a, button', hoverLeaveTitle);
 	$('.navbar').on('click', '.btn-success', showCarousel);	
 };
 

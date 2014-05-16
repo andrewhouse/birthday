@@ -103,4 +103,18 @@ div.flash.notice {
 	margin: 5% auto;
 }
 
+.carousel-caption {
+	margin:  auto;
+	padding-bottom: 1%;
+	max-width: 83.5%;
+	position: relative;
+}
+
+.btn {
+	margin: 1%;
+}
+
+#solo-greeting {
+	margin: 5% auto;
+}
 

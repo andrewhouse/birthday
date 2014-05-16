@@ -4,7 +4,7 @@
     <% if @pictures %>
 				<p class="btn btn-default btn-warning"><%= link_to "Add a Birthday Greeting!", new_picture_path, class: "navbar-link" %></p>
 				</br>
-				<button class="btn btn-default btn-success">View All Greetings <span class="badge"><%= Picture.all.length %></span></button>
+				<button class="btn btn-default btn-success">Display Greetings as Slideshow <span class="badge"><%= Picture.all.length %></span></button>
 		<% else %>
 			<p class="btn btn-default btn-warning"><%= link_to "Back to Greetings", root_path, class: "navbar-link" %></p>
 		<% end %>

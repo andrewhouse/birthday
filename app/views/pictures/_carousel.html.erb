@@ -10,12 +10,27 @@
 			<% if @pictures.index(picture) == 0 %>
 				<div class="item active">
 					<%= image_tag picture.image.url(:large) %>
+					<div class="carousel-caption">
+						<h3><%= picture.description %></h3>
+						<h5>From: <%= picture.username %></h5> 
+					</div>
 				</div>
 			<% else %>
 				<div class="item">
 					<%= image_tag picture.image.url(:large) %>
+					<div class="carousel-caption">
+						<h3><%= picture.description %></h3>
+						<h5>From: <%= picture.username %></h5> 
+					</div>
 				</div>
 				<% end %>
+				<% else %>
+				<div class="item">
+					<div class="carousel-caption" id="solo-greeting">
+						<h3><%= picture.description %></h3>
+						<h5>From: <%= picture.username %></h5> 
+					</div>
+				</div>
 			<% end %>
 		<% end %>
 	</div>
