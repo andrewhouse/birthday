@@ -89,7 +89,7 @@ div.flash.notice {
 	left: 46%;
 	z-index: 15;
 	width: 60%;
-	margin-left: 0%;
+	margin: auto;
 	padding-left: 0;
 	list-style: none;
 	text-align: center;
