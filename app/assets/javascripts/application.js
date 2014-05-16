@@ -72,7 +72,7 @@ function showCarousel(){
 	} else {
 		$(this).html('Display Greetings as Slideshow');
 	}
-	$('.carousel').carousel({interval:4000, wrap: true, pause: ""}, 'cycle');
+	$('.carousel').carousel({interval:5000, wrap: true, pause: ""}, 'cycle');
 }
 
 
