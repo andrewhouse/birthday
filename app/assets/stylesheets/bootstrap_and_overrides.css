@@ -26,10 +26,6 @@ body  {
 	font-family: calibri;
 }
 
-.topper {
-	margin-top: 5%;
-}
-
 .navbar .container{
 	background: #fff;
 	width: 83.5%;
@@ -81,4 +77,18 @@ div.flash.notice {
 
 #error_explanation{
 	color: red;
+}
+
+.carousel-inner > .item > img {
+	margin: 2% auto;
+}
+.carousel-indicators {
+position: absolute;
+left: 46%;
+z-index: 15;
+width: 60%;
+margin-left: 0%;
+padding-left: 0;
+list-style: none;
+text-align: center;
 }
