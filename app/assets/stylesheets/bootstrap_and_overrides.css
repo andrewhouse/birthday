@@ -95,6 +95,16 @@ div.flash.notice {
 	text-align: center;
 }
 
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+
 #carousel-example-generic{
 	display:none;
 }
