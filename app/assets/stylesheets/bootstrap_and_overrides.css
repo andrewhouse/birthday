@@ -118,3 +118,10 @@ div.flash.notice {
 	margin: 5% auto;
 }
 
+#carouselButtons {
+	position: absolute;
+	top: 10%;
+}
+
+
+

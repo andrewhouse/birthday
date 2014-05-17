@@ -63,7 +63,6 @@ function carouselNormalization() {
 	  }
 
 function showCarousel(){
-
 	$('#carousel-example-generic').first('img').fadeToggle().toggleClass('display');
 	carouselNormalization();
 	$('.topper').fadeToggle();
@@ -73,6 +72,14 @@ function showCarousel(){
 		$(this).html('Display Greetings as Slideshow');
 	}
 	$('.carousel').carousel({interval:5000, wrap: true, pause: ""}, 'cycle');
+
+}
+
+function play (){
+    $('.carousel').carousel('cycle');
+}
+function pause (){
+    $('.carousel').carousel('pause');
 }
 
 
@@ -80,6 +87,7 @@ function documentLoad(){
 	$('.containing-border').on('click','button', showButton);
 	$('.navbar').on('mouseenter','.container, button, a', hoverTitle).on('mouseleave','.container, a, button', hoverLeaveTitle);
 	$('.navbar').on('click', '.btn-success', showCarousel);	
+	$('#carouselButtons').on('click', '#playButton', play).on('click','#pauseButton', pause);
 }
 
 $(document).ready(documentLoad);
